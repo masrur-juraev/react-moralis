@@ -1,0 +1,351 @@
+.articales {
+  overflow: hidden;
+  width: 100%;
+  background-image: url(./../../../../../Assets/images/articles_back.jpg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  padding: 100px 0;
+  .article_wrapper {
+    .react-tabs__tab {
+      border-radius: 8px 8px 0 0;
+      font-size: 36px;
+      padding: 10px 80px;
+      background-color: #fff;
+    }
+    .react-tabs__tab--selected {
+      background-color: #c2c2c2;
+    }
+    .react-tabs__tab-panel--selected {
+      background: repeating-linear-gradient(
+        157deg,
+        #00000000,
+        white,
+        transparent 690px
+      );
+      background-repeat: no-repeat;
+      background-color: #b3b3b3;
+      background-size: cover;
+      padding: 35px 80px;
+    }
+    .react-tabs__tab-list {
+      margin: 0 0 0px;
+      border: 0px;
+    }
+  }
+  .article_row {
+    .article_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px 0 15px 0;
+      border-bottom: 1px solid #000;
+      .article_image {
+        height: 200px;
+        width: 380px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .article_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 190px;
+        padding-left: 40px;
+        width: 100%;
+        .article_author {
+          .article_name {
+            font-size: 28px;
+            font-weight: 600;
+          }
+          .post_details {
+            .date {
+              border-right: 1px solid #000;
+              padding-left: 0px !important;
+            }
+            .date,
+            .name {
+              padding: 0 10px;
+              font-size: 22px;
+              line-height: 24px;
+            }
+          }
+        }
+        .content_text {
+          //height: 100px;
+          max-width: 900px;
+          width: 900px;
+          font-size: 17px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          justify-content: flex-start;
+          //align-items: center;
+        }
+        a {
+          color: #000;
+        }
+      }
+      &:last-child {
+        border-bottom: 0px solid #000;
+      }
+    }
+  }
+  .article_action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0 0;
+    .article_btn {
+      background-image: url(./../../../../../Assets/images/button_2.png);
+      height: 85px;
+      width: 340px;
+      background-size: cover;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: 0;
+      font-size: 22px;
+      line-height: 20px;
+      background-position: center;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 540px) {
+  .articales {
+    padding: 50px 0;
+    .article_wrapper {
+      .react-tabs__tab-panel--selected {
+        padding: 15px;
+      }
+    }
+    .article_row {
+      .article_box {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      .article_content {
+        padding-left: 0px !important;
+        .content_text {
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: flex-start !important;
+          //height: 70px !important;
+        }
+      }
+    }
+    .article_image {
+      height: auto !important;
+      width: 100% !important;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .article_action {
+      .article_btn {
+        height: 65px;
+        width: 250px;
+        font-size: 18px;
+      }
+    }
+    .react-tabs__tab {
+      font-size: 18px !important;
+      padding: 10px 30px !important;
+    }
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .articales {
+    padding: 50px 0 0;
+    .article_wrapper {
+      .react-tabs__tab-panel--selected {
+        padding: 20px 30px;
+      }
+    }
+    .article_row {
+      .article_box {
+        flex-direction: row;
+        padding: 10px 0;
+        margin-bottom: 15px;
+      }
+      .article_content {
+        padding-left: 0px !important;
+        height: 200px !important;
+        .content_text {
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: flex-start !important;
+          //height: 70px !important;
+        }
+      }
+    }
+    .article_image {
+      height: auto !important;
+      width: 100% !important;
+      margin-bottom: 20px;
+      margin-top: 00px;
+      margin-right: 20px;
+    }
+    .article_action {
+      .article_btn {
+        height: 90px;
+        width: 350px;
+        font-size: 24px;
+      }
+    }
+    .react-tabs__tab {
+      font-size: 24px !important;
+      padding: 15px 40px !important;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .articales {
+    padding: 50px 0 0;
+    .article_wrapper {
+      .react-tabs__tab-panel--selected {
+        padding: 20px 30px;
+      }
+    }
+    .article_row {
+      .article_box {
+        flex-direction: row;
+        padding: 10px 0;
+        margin-bottom: 15px;
+      }
+      .article_content {
+        padding-left: 0px !important;
+        height: 200px !important;
+        .content_text {
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: flex-start !important;
+          //height: 70px !important;
+        }
+      }
+    }
+    .article_image {
+      // height: 250px !important;
+      overflow: hidden;
+      width: 460px !important;
+      margin-bottom: 20px;
+      margin-top: 00px;
+      margin-right: 20px;
+    }
+    .article_action {
+      .article_btn {
+        height: 90px;
+        width: 350px;
+        font-size: 24px;
+      }
+    }
+    .react-tabs__tab {
+      font-size: 24px !important;
+      padding: 15px 40px !important;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .articales {
+    padding: 50px 0 0;
+    .article_wrapper {
+      .react-tabs__tab-panel--selected {
+        padding: 20px 30px;
+      }
+    }
+    .article_row {
+      .article_box {
+        flex-direction: row;
+        padding: 10px 0;
+        margin-bottom: 15px;
+      }
+      .article_content {
+        padding-left: 0px !important;
+        height: 200px !important;
+        .content_text {
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: flex-start !important;
+          //height: 70px !important;
+        }
+      }
+    }
+    .article_image {
+      // height: 250px !important;
+      overflow: hidden;
+      width: 460px !important;
+      margin-bottom: 20px;
+      margin-top: 00px;
+      margin-right: 20px;
+    }
+    .article_action {
+      .article_btn {
+        height: 90px;
+        width: 350px;
+        font-size: 24px;
+      }
+    }
+    .react-tabs__tab {
+      font-size: 24px !important;
+      padding: 15px 40px !important;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1480px) {
+  .articales {
+    padding: 50px 0 0;
+    .article_wrapper {
+      .react-tabs__tab-panel--selected {
+        padding: 20px 30px;
+      }
+    }
+    .article_row {
+      .article_box {
+        flex-direction: row;
+        padding: 10px 0;
+        margin-bottom: 15px;
+      }
+      .article_content {
+        padding-left: 0px !important;
+        height: 200px !important;
+        .content_text {
+          max-width: 100% !important;
+          width: 100% !important;
+          align-items: flex-start !important;
+          //height: 70px !important;
+        }
+      }
+    }
+    .article_image {
+      // height: 250px !important;
+      overflow: hidden;
+      width: 460px !important;
+      margin-bottom: 20px;
+      margin-top: 00px;
+      margin-right: 20px;
+    }
+    .article_action {
+      .article_btn {
+        height: 90px;
+        width: 350px;
+        font-size: 24px;
+      }
+    }
+    .react-tabs__tab {
+      font-size: 24px !important;
+      padding: 15px 40px !important;
+      font-weight: 500;
+    }
+  }
+}

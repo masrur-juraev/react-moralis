@@ -1,0 +1,194 @@
+.countdown {
+  overflow: hidden;
+  padding-bottom: 80px;
+  .timer_countdown {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    .time_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 130px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      p {
+        font-size: 70px;
+        height: 50px;
+        position: relative;
+        color: #fff;
+        z-index: 2;
+        font-weight: 700;
+        &::after {
+            content: "";
+            height: 43px;
+            width: 70px;
+            background-color: #00000061;
+            top: 15px;
+            left: -15px;
+            position: absolute;
+            z-index: 2;
+            border-radius: 6px 6px 0px 0px;
+          }
+          &::before {
+              content: "";
+              height: 43px;
+              width: 70px;
+              background-color: #00000061;
+              top: 15px;
+              left: 65px;
+              position: absolute;
+              z-index: 2;
+              border-radius: 6px 6px 0px 0px;
+            }
+        &::first-letter {
+          margin-right: 40px;
+        }
+      }
+      .time_digit {
+        position: relative;
+        &::after {
+          content: "";
+          height: 80px;
+          width: 70px;
+          background-color: #4d4d4d;
+          top: 15px;
+          left: -75px;
+          position: absolute;
+          z-index: 1;
+          border-radius: 6px;
+        }
+        &::before {
+          content: "";
+          height: 80px;
+          width: 70px;
+          background-color: #4d4d4d;
+          top: 15px;
+          left: 5px;
+          position: absolute;
+          z-index: 1;
+          border-radius: 6px;
+        }
+      }
+      .line {
+        position: relative;
+        &::after {
+          content: "";
+          height: 3px;
+          width: 7px;
+          background-color: rgba(255, 255, 255, 0.788);
+          top: 55px;
+          left: 5px;
+          position: absolute;
+          z-index: 3;
+        }
+        &::before {
+          content: "";
+          height: 3px;
+          width: 7px;
+          background-color: rgba(255, 255, 255, 0.788);
+          top: 55px;
+          right: -75px;
+          position: absolute;
+          z-index: 3;
+        }
+      }
+      .line1 {
+        position: relative;
+        &::after {
+          content: "";
+          height: 3px;
+          width: 7px;
+          background-color: rgba(255, 255, 255, 0.788);
+          top: 55px;
+          left: -75px;
+          position: absolute;
+          z-index: 3;
+        }
+        &::before {
+          content: "";
+          height: 3px;
+          width: 7px;
+          background-color: rgba(255, 255, 255, 0.788);
+          top: 55px;
+          right: 5px;
+          position: absolute;
+          z-index: 3;
+        }
+      }
+      .shadow {
+        position: relative;
+        &::after {
+          content: "";
+          height: 43px;
+          width: 70px;
+          background-color: #000000;
+          top: 15px;
+          left: -75px;
+          position: absolute;
+          z-index: 2;
+          border-radius: 6px 6px 0px 0px;
+        }
+        &::before {
+            content: "";
+            height: 43px;
+            width: 70px;
+            background-color: #000000;
+            top: 15px;
+            left: 5px;
+            position: absolute;
+            z-index: 2;
+            border-radius: 6px 6px 0px 0px;
+          }
+      }
+      .time_name {
+        margin-top: 35px;
+        display: block;
+        font-size: 26px;
+        font-weight: 600;
+      }
+    }
+  }
+  .arrow_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// Responsive
+
+@media screen and (max-width: 540px){
+  .countdown{
+    padding: 50px 10px 80px;
+    .timer_countdown{
+      align-items: center;
+      flex-direction: column;
+      .time_text{
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+    .arrow_img img {
+      width: 90%;
+    }
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .countdown{
+    padding: 0px 50px 70px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {}
+@media screen and (min-width: 1281px) and (max-width: 1480px) {}

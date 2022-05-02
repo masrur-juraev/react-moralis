@@ -1,0 +1,183 @@
+.prizes {
+  overflow: hidden;
+}
+.prizes_wrapper {
+  width: 100%;
+  background-image: url(./../../../../../Assets/images/prize_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 50px 80px;
+  .page_heading {
+    h2,
+    p {
+      color: #fff;
+    }
+  }
+}
+.prize_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.prize_row_center {
+  display: flex;
+  justify-content: space-between;
+}
+.prize_box {
+  width: 340px;
+  background-color: #ffffffce;
+  padding: 20px 30px;
+  border-radius: 30px;
+  margin-top: 50px;
+  button {
+    position: relative;
+    top: -60px;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, 0%);
+    height: 55px;
+    width: 260px;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    line-height: 20px;
+    background-position: center;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+    cursor: auto;
+    padding-bottom: 0px;
+    user-select: none;
+  }
+  span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -45px;
+  }
+}
+.p1 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_1.svg);
+    height: 65px;
+    width: 80px;
+  }
+}
+.p2 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_2.svg);
+    height: 65px;
+    width: 80px;
+  }
+}
+.p3 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_3.svg);
+    height: 65px;
+    width: 80px;
+  }
+}
+.p4 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_4.svg);
+  }
+}
+.p5 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_5.svg);
+  }
+}
+
+.small {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_2.svg);
+    height: 65px;
+    width: 90px;
+  }
+}
+.small__1 {
+  button {
+    background-image: url(./../../../../../Assets/images/prize_btn_1.svg);
+    height: 65px;
+    width: 90px;
+  }
+}
+
+.box_right {
+  margin-right: 50px;
+}
+
+// Responsive
+
+@media screen and (max-width: 540px) {
+  .prizes_wrapper {
+    padding: 50px 15px 0;
+  }
+  .prize_row {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .prize_box {
+    padding: 30px 15px;
+    width: 310px;
+    margin-bottom: 50px;
+  }
+  .box_right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .prizes_wrapper {
+    padding: 50px 15px 0;
+  }
+  .prize_row {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .prize_box {
+    padding: 30px 15px;
+    width: 310px;
+    margin: 25px;
+    margin-bottom: 50px;
+  }
+  .box_right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .prizes_wrapper {
+    width: 96%;
+    margin: 60px auto 0 auto;
+    padding: 50px 30px 0;
+  }
+  .prize_box {
+    padding: 30px 15px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .prize_box {
+    padding: 30px 15px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1480px) {
+  .prize_box {
+    padding: 30px 15px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,117 @@
+.faqs{
+  overflow: hidden;
+    padding: 100px 0 0;
+    width: 100%;
+    .faqs_wrapper{
+        max-width: 1100px;
+        margin: 0 auto;
+        .collapsible{
+            .header{
+                width: 100%;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 3px solid #fff;
+                p{
+                    font-size: 28px;
+                    margin: 0;
+                    user-select: none;
+                }
+                span{
+                    font-size: 40px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: cen    ter;
+                    align-items: center;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+  }
+
+  .accordion-wrapper {
+    & + * {
+      margin-top: 0.9em;
+
+    }
+  }
+
+  .accordion-item {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .accordion-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+
+  .accordion-title {
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0em;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    margin: 0;
+    user-select: none;
+    width: 100%;
+
+    &:hover,
+    &.open {
+      color: #fff;
+    }
+    span{
+        font-size: 38px;
+        line-height: 38px;
+    }
+  }
+
+  .accordion-content {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+
+  // Responsive
+
+@media screen and (max-width: 540px){
+  .faqs{
+    background-color: #000;
+    padding: 50px 20px 70px 20px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .faqs{
+    background-color: transparent;
+    padding: 50px 50px 0px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faqs{
+    background-color: transparent;
+    padding: 50px 50px 0px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .faqs{
+    background-color: transparent;
+    padding: 80px 50px 0px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1480px) {}

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'rammettoone-regular';
+  src: url('./RammettoOne-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'muli-extrabold';
+  src: url('./Muli-ExtraBold.ttf')
+}
+
+@font-face {
+  font-family: 'muli-bold';
+  src: url('./Muli-Bold.ttf')
+}

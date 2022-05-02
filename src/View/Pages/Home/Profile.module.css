@@ -1,0 +1,295 @@
+.container {
+  padding-top: 145px;
+  padding-bottom: 8rem;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(./../../../Assets/images/leaderboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prize_back {
+  width: 45%;
+  background-image: url(../../../Assets/images/prize_back.png);
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.view_more {
+      height: 40px;
+      width: 150px;
+      background-size: cover;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: 0;
+      font-size: 20px;
+      line-height: 20px;
+      background-position: center;
+      font-weight: 500;
+      color: #fff;
+      cursor: pointer;
+  background-image: url(../../../Assets/images/button_2.png);
+}
+.profile_card {
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  background-color: rgb(178, 188, 193, 0.9);
+  border-radius: 1rem;
+
+  width: 60rem;
+  height: 22rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 1.8rem;
+}
+
+.message {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profile_image {
+  max-width: 38%;
+  height: 100%;
+
+  border-radius: 1rem;
+  flex: 1;
+
+  background-color: white;
+}
+
+.information {
+  flex: 3;
+  padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-direction: start;
+}
+
+.informationStatistics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.informationStatisticsBlock {
+  width: 5rem;
+  height: 2rem;
+  padding-right: 1rem;
+  background-color: orange;
+}
+
+.financial_section {
+  margin-top: 2rem;
+  background: url("../../../Assets/texture.jpg");
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 1rem;
+
+  width: 60rem;
+  height: 14rem;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.2rem 1.8rem 2rem 1.8rem;
+}
+
+.financial_section_title {
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+  align-self: center;
+  padding-bottom: 1rem;
+}
+
+.financial_card_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.financial_card {
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+  min-width: 10rem;
+  background-color: rgb(178, 188, 193, 0.8);
+  padding: 1.8rem;
+}
+
+.financial_card_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.financial_card_content {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.financial_history_section {
+  margin-top: 2rem;
+
+  background-color: rgb(178, 188, 193, 0.7);
+  border-radius: 1rem;
+
+  width: 60rem;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem 1.8rem 1.5rem 1.8rem;
+}
+
+.financial_history_title {
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.financial_history_tableTitle {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.financial_history_tableTitle_tab {
+  text-align: center;
+  font-weight: 600;
+  min-width: 8rem;
+}
+.financial_history_tableTitle_tab_description {
+  text-align: center;
+  font-weight: 600;
+  min-width: 13rem;
+}
+
+.financial_history_tableContent {
+  min-width: 100%;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+}
+
+.nft_name {
+  font-weight: 700;
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.transaction_container {
+  padding: 1rem;
+  background-color: rgb(178, 188, 193, 0.8);
+  border-radius: 1rem;
+
+  width: 45%;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid lightblue;
+  font-size: x-large;
+}
+td {
+  font-size: large;
+  padding: 1rem;
+}
+
+tr {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.transaction_header {
+  padding: 1rem;
+  display: flex;
+  font-size: x-large;
+  font-weight: 700;
+  justify-content: space-around;
+
+  border-bottom: solid 0.15rem lightgray;
+}
+
+.transaction_row {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile_card {
+    margin-top: 12rem;
+
+    background-color: rgb(178, 188, 193, 0.9);
+    border-radius: 1rem;
+
+    height: 12rem;
+
+    flex-wrap: wrap;
+  }
+
+  .financial_history_section {
+    margin-top: 2rem;
+
+    background-color: rgb(178, 188, 193, 0.7);
+    border-radius: 1rem;
+
+    width: 24rem;
+    height: 12rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem 1.8rem 1.5rem 1.8rem;
+  }
+
+  .financial_section {
+    margin-top: 2rem;
+    background: url("../../../Assets/texture.jpg");
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 1rem;
+
+    width: 24rem;
+    height: 12rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.2rem 1.8rem 1.8rem 1.8rem;
+  }
+}
